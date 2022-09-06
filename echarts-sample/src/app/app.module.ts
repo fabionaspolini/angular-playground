@@ -6,11 +6,13 @@ import { NgxEchartsModule } from 'ngx-echarts';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TreemapDiskTreeComponent } from './treemap-disk-tree/treemap-disk-tree.component';
+import { SankeyEnergyComponent } from './sankey/sankey-energy/sankey-energy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TreemapDiskTreeComponent
+    TreemapDiskTreeComponent,
+    SankeyEnergyComponent
   ],
   imports: [
     BrowserModule,
