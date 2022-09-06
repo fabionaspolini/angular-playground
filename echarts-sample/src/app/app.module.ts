@@ -10,6 +10,9 @@ import { EnergySankeyComponent } from './sankey/energy-sankey/energy-sankey.comp
 import { CalendarHeatmapComponent } from './heatmap/calendar-heatmap/calendar-heatmap.component';
 import { StackedLineComponent } from './line/stacked-line/stacked-line.component';
 import { StackedAreaLineComponent } from './line/stacked-area-line/stacked-area-line.component';
+import { BusLinesMapComponent } from './map/bus-lines-map/bus-lines-map.component';
+import { AbmModule } from 'angular-baidu-maps';
+import { BaiduMapComponent } from './map/baidu-map/baidu-map.component';
 
 @NgModule({
   declarations: [
@@ -18,15 +21,21 @@ import { StackedAreaLineComponent } from './line/stacked-area-line/stacked-area-
     EnergySankeyComponent,
     CalendarHeatmapComponent,
     StackedLineComponent,
-    StackedAreaLineComponent
+    StackedAreaLineComponent,
+    BusLinesMapComponent,
+    BaiduMapComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     NgxEchartsModule.forRoot({
       echarts: () => import("echarts")
     }),
-    HttpClientModule
+    AbmModule.forRoot({
+      apiKey: "KOmVjPVUAey1G2E8zNhPiuQ6QiEmAwZu",
+      libraries: ['//api.map.baidu.com/library/RectangleZoom/1.2/src/RectangleZoom_min.js'],
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
