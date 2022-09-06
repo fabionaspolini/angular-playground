@@ -3,11 +3,11 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-sankey-energy',
+  selector: 'app-energy-sankey',
   templateUrl: './energy-sankey.component.html',
   styleUrls: ['./energy-sankey.component.scss']
 })
-export class SankeyEnergyComponent implements OnInit {
+export class EnergySankeyComponent implements OnInit {
 
   options: EChartsOption = {}
 

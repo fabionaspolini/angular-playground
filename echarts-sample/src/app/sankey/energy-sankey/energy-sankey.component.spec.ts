@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SankeyEnergyComponent } from './energy-sankey.component';
+import { EnergySankeyComponent } from './energy-sankey.component';
 
 describe('SankeyEnergyComponent', () => {
-  let component: SankeyEnergyComponent;
-  let fixture: ComponentFixture<SankeyEnergyComponent>;
+  let component: EnergySankeyComponent;
+  let fixture: ComponentFixture<EnergySankeyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SankeyEnergyComponent ]
+      declarations: [ EnergySankeyComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SankeyEnergyComponent);
+    fixture = TestBed.createComponent(EnergySankeyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
