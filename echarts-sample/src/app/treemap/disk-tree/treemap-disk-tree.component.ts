@@ -9,12 +9,12 @@ import { EChartsOption, format } from 'echarts';
 })
 export class TreemapDiskTreeComponent implements OnInit {
 
-  options: EChartsOption = this.getOptions(null!)
+  options: EChartsOption = {}
 
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get<any[]>("http://localhost:4200/assets/treemap/disk.tree.json")
+    this.http.get<any[]>("http://localhost:4200/assets/data/disk.tree.json")
       .subscribe(data => this.options = this.getOptions(data))
   }
 
