@@ -1,5 +1,5 @@
 import { CalendarHeatmapComponent } from './heatmap/calendar-heatmap/calendar-heatmap.component';
-import { SankeyEnergyComponent } from './sankey/sankey-energy/sankey-energy.component';
+import { SankeyEnergyComponent } from './sankey/energy-sankey/energy-sankey.component';
 import { TreemapDiskTreeComponent } from './treemap/disk-tree/treemap-disk-tree.component';
 import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';

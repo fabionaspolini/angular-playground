@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SankeyEnergyComponent } from './sankey-energy.component';
+import { SankeyEnergyComponent } from './energy-sankey.component';
 
 describe('SankeyEnergyComponent', () => {
   let component: SankeyEnergyComponent;

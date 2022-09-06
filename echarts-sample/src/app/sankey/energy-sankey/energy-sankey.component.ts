@@ -4,8 +4,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-sankey-energy',
-  templateUrl: './sankey-energy.component.html',
-  styleUrls: ['./sankey-energy.component.scss']
+  templateUrl: './energy-sankey.component.html',
+  styleUrls: ['./energy-sankey.component.scss']
 })
 export class SankeyEnergyComponent implements OnInit {
 
