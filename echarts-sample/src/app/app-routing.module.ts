@@ -1,3 +1,4 @@
+import { CalendarHeatmapComponent } from './heatmap/calendar-heatmap/calendar-heatmap.component';
 import { SankeyEnergyComponent } from './sankey/sankey-energy/sankey-energy.component';
 import { TreemapDiskTreeComponent } from './treemap/disk-tree/treemap-disk-tree.component';
 import { AppComponent } from './app.component';
@@ -6,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: "", component: AppComponent },
+  { path: "heatmap/calendar", component: CalendarHeatmapComponent },
   { path: "sankey/energy", component: SankeyEnergyComponent },
   { path: "treemap/disk-tree", component: TreemapDiskTreeComponent },
 ];
