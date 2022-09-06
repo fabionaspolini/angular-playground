@@ -8,13 +8,17 @@ import { AppComponent } from './app.component';
 import { DiskTreemapComponent } from './treemap/disk/disk-treemap.component';
 import { EnergySankeyComponent } from './sankey/energy-sankey/energy-sankey.component';
 import { CalendarHeatmapComponent } from './heatmap/calendar-heatmap/calendar-heatmap.component';
+import { StackedLineComponent } from './line/stacked-line/stacked-line.component';
+import { StackedAreaLineComponent } from './line/stacked-area-line/stacked-area-line.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DiskTreemapComponent,
     EnergySankeyComponent,
-    CalendarHeatmapComponent
+    CalendarHeatmapComponent,
+    StackedLineComponent,
+    StackedAreaLineComponent
   ],
   imports: [
     BrowserModule,
