@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { EChartsOption, format } from 'echarts';
 
 @Component({
-  selector: 'app-treemap-disk-tree',
-  templateUrl: './treemap-disk-tree.component.html',
-  styleUrls: ['./treemap-disk-tree.component.scss']
+  selector: 'app-disk-treemap',
+  templateUrl: './disk-treemap.component.html',
+  styleUrls: ['./disk-treemap.component.scss']
 })
-export class TreemapDiskTreeComponent implements OnInit {
+export class DiskTreemapComponent implements OnInit {
 
   options: EChartsOption = {}
 

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TreemapDiskTreeComponent } from './treemap-disk-tree.component';
+import { DiskTreemapComponent } from './disk-treemap.component';
 
 describe('TreemapDiskTreeComponent', () => {
-  let component: TreemapDiskTreeComponent;
-  let fixture: ComponentFixture<TreemapDiskTreeComponent>;
+  let component: DiskTreemapComponent;
+  let fixture: ComponentFixture<DiskTreemapComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TreemapDiskTreeComponent ]
+      declarations: [ DiskTreemapComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TreemapDiskTreeComponent);
+    fixture = TestBed.createComponent(DiskTreemapComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
