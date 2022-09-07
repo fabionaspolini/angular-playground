@@ -1,0 +1,44 @@
+// @use '@nebular/theme/styles/theming' as *;
+@use '../../../themes' as *;
+
+
+// .my-text {
+//   font-family: nb-theme(font-family-primary);
+//   color: nb-theme(color-success-800);
+// }
+
+nb-card-body.example-items-col {
+  // align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  >* {
+    margin-bottom: 1rem;
+  }
+}
+
+nb-card-body.example-items-rows {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: -0.5rem;
+
+  >* {
+    margin: 0.5rem;
+  }
+}
+
+.text {
+  margin: 1rem 0 0;
+  // Set constant line height to prevent text shifting.
+  line-height: nb-theme(text-subtitle-line-height);
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
