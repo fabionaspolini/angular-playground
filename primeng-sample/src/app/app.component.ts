@@ -5,16 +5,7 @@ import { PrimeNGConfig } from 'primeng/api';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  styles: [`
-        :host ::ng-deep button {
-            margin-right: .5em;
-        }
-    `]
 })
 export class AppComponent {
   title = 'primeng-sample';
-
-  constructor (private primengConfig: PrimeNGConfig) {
-    this.primengConfig.ripple = true;
-  }
 }
