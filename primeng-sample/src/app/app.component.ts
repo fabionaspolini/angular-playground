@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PrimeNGConfig } from 'primeng/api';
+import { MenuItem, PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +8,19 @@ import { PrimeNGConfig } from 'primeng/api';
 })
 export class AppComponent {
   title = 'primeng-sample';
+
+  items: MenuItem[] = [{
+    label: 'File',
+    items: [
+      { label: 'New', icon: 'pi pi-plus' },
+      { label: 'Open', icon: 'pi pi-download' }
+    ]
+  },
+  {
+    label: 'Edit',
+    items: [
+      { label: 'Undo', icon: 'pi pi-refresh' },
+      { label: 'Redo', icon: 'pi pi-repeat' }
+    ]
+  }];
 }

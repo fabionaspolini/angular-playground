@@ -13,6 +13,10 @@ import { RippleModule } from 'primeng/ripple';
 import { StyleClassModule } from 'primeng/styleclass';
 import { InputTextModule } from 'primeng/inputtext';
 import { MenuModule } from 'primeng/menu';
+import { MenubarModule } from 'primeng/menubar';
+import { ToolbarModule } from 'primeng/toolbar';
+import { SplitButtonModule } from 'primeng/splitbutton';
+
 import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
@@ -31,7 +35,11 @@ import { HomeComponent } from './pages/home/home.component';
     AccordionModule,
     InputTextModule,
     DropdownModule,
-    StyleClassModule
+    StyleClassModule,
+    MenuModule,
+    ToolbarModule,
+    SplitButtonModule,
+    MenubarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
