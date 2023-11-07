@@ -1,0 +1,32 @@
+import { Injectable } from "@angular/core";
+import { HttpInterceptor } from "@angular/common/http";
+import { HttpRequest } from "@angular/common/http";
+import { HttpHandler } from "@angular/common/http";
+import { Observable } from "rxjs";
+import { HttpSentEvent } from "@angular/common/http";
+import { HttpHeaderResponse } from "@angular/common/http";
+import { HttpProgressEvent } from "@angular/common/http";
+import { HttpResponse } from "@angular/common/http";
+import { HttpUserEvent } from "@angular/common/http";
+
+
+@Injectable({
+  providedIn: 'root'
+})
+export class RequestInterceptor implements HttpInterceptor {
+
+  constructor() { }
+
+  intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpSentEvent
+    | HttpHeaderResponse | HttpProgressEvent | HttpResponse<any> | HttpUserEvent<any>> {
+
+    const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOjEsInVzZXJuYW1lIjoiZnJhbmNpc2NvIiwiY29tcGFueWlkIjpudWxsLCJmaXJzdF9wYXNzd29yZCI6MCwibmFtZSI6IkZyYW5jaXNjbyIsInN1cGVyIjoxLCJleHAiOjE2NTI4NDcwNzQ1MzF9.Wp6m2iQMX3M1JAZa-rgOnK3HtAsl4jTh7jSEvAFszuM"
+    req = req.clone({
+      setHeaders: {
+        'Authorization': token
+      }
+    });
+
+    return next.handle(req);
+  }
+}

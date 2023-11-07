@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'usuario', component: CadUsuarioComponent },
+  { path: 'usuario/:id', component: CadUsuarioComponent },
 ];
 
 @NgModule({

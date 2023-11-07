@@ -1,1 +1,18 @@
-<po-page-detail p-title="PO Page Detail"> </po-page-detail>
+<!--<po-page-detail p-title="PO Page Detail">
+</po-page-detail>-->
+
+<po-datepicker
+      class="po-md-6"
+      name="startDate"
+      [(ngModel)]="startDate"
+      p-clean
+      p-format="dd/mm/yyyy"
+      p-label="Date start"
+      p-required
+    >
+    </po-datepicker>
+
+<po-page-dynamic-edit [p-auto-router]="true" p-title="Antecipação manual" [p-actions]="actions" [p-fields]="fields"
+  [p-service-api]="serviceApi">
+</po-page-dynamic-edit>
+
