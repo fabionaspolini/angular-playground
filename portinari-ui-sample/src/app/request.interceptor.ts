@@ -20,7 +20,7 @@ export class RequestInterceptor implements HttpInterceptor {
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpSentEvent
     | HttpHeaderResponse | HttpProgressEvent | HttpResponse<any> | HttpUserEvent<any>> {
 
-    const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOjEsInVzZXJuYW1lIjoiZnJhbmNpc2NvIiwiY29tcGFueWlkIjpudWxsLCJmaXJzdF9wYXNzd29yZCI6MCwibmFtZSI6IkZyYW5jaXNjbyIsInN1cGVyIjoxLCJleHAiOjE2NTI4NDcwNzQ1MzF9.Wp6m2iQMX3M1JAZa-rgOnK3HtAsl4jTh7jSEvAFszuM"
+    const token = "Bearer <my-token>"
     req = req.clone({
       setHeaders: {
         'Authorization': token
